@@ -1,35 +1,33 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Импортируем TextMeshPro
+using TMPro;
 
 public class AirplaneManager : MonoBehaviour
 {
     [System.Serializable]
-    public class Airplane
+    public class Characters
     {
-        public string airplaneName;
+        public string name;
         public int unlockLevel;
     }
 
-    public Airplane[] airplanes;
+    public Characters[] _characters;
     public Button[] airplaneButtons;
 
     private int currentLevelIndex;
 
     void Start()
     {
-        currentLevelIndex = PlayerPrefs.GetInt("levelIndex", 1);
-        //currentLevelIndex = 16;
+        currentLevelIndex = PlayerPrefs.GetInt("levelIndex", 1000);
 
-        // Получаем индекс выбранного самолета из PlayerPrefs
         int selectedAirplaneIndex = PlayerPrefs.GetInt("selectedAirplaneIndex", 0);
 
-        for (int i = 0; i < airplanes.Length; i++)
+        for (int i = 0; i < _characters.Length; i++)
         {
             int index = i;
             Button button = airplaneButtons[index];
 
-            if (currentLevelIndex >= airplanes[index].unlockLevel)
+            if (currentLevelIndex >= _characters[index].unlockLevel)
             {
                 button.GetComponentInChildren<TMP_Text>().text = "Select";
                 button.onClick.AddListener(() => SelectAirplane(index));
@@ -40,7 +38,7 @@ public class AirplaneManager : MonoBehaviour
             }
             else
             {
-                button.GetComponentInChildren<TMP_Text>().text = "Unlocks at level " + airplanes[index].unlockLevel;
+                button.GetComponentInChildren<TMP_Text>().text = "Unlocks at level " + _characters[index].unlockLevel;
                 button.interactable = false;
             }
         }
@@ -50,7 +48,7 @@ public class AirplaneManager : MonoBehaviour
     {
         for (int i = 0; i < airplaneButtons.Length; i++)
         {
-            airplaneButtons[i].GetComponentInChildren<TMP_Text>().text = currentLevelIndex >= airplanes[i].unlockLevel ? "Select" : "Unlocks at level " + airplanes[i].unlockLevel;
+            airplaneButtons[i].GetComponentInChildren<TMP_Text>().text = currentLevelIndex >= _characters[i].unlockLevel ? "Select" : "Unlocks at level " + _characters[i].unlockLevel;
         }
 
         airplaneButtons[index].GetComponentInChildren<TMP_Text>().text = "Selected";

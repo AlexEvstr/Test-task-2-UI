@@ -9,7 +9,7 @@ public class MenuButtons : MonoBehaviour
     [SerializeField] private GameObject _exitWindow;
 
     [SerializeField] private Ease popupEase = Ease.OutBack;
-    private float popupDuration = 0.5f;
+    private float popupDuration = 0.45f;
 
     private void Start()
     {
