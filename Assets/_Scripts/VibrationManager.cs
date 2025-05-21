@@ -28,13 +28,6 @@ public class VibrationManager : MonoBehaviour
 #endif
     }
 
-    public void VibrateHeavy()
-    {
-#if UNITY_ANDROID
-        Vibration.VibratePeek();
-#endif
-    }
-
     public void SetVibrationEnabled(bool enabled)
     {
         vibrationEnabled = enabled;
