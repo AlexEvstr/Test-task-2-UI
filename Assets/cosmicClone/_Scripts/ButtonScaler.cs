@@ -1,43 +1,40 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
-public class ButtonScaler : MonoBehaviour
+[RequireComponent(typeof(UnityEngine.UI.Button))]
+public class ButtonScaler : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler
 {
-    public float scaleMultiplier = 0.5f; // уменьшение
-    public float animationDuration = 0.1f;
+    [SerializeField] private float scaleMultiplier = 0.9f;
+    [SerializeField] private float animationDuration = 0.1f;
+    [SerializeField] private Ease ease = Ease.OutQuad;
 
-    public void ScaleCallingButton()
+    private Vector3 _originalScale;
+
+    private void Awake()
     {
-        GameObject clickedObject = EventSystem.current.currentSelectedGameObject;
-        if (clickedObject != null)
-        {
-            StartCoroutine(ScaleButtonEffect(clickedObject.transform));
-        }
+        _originalScale = transform.localScale;
     }
 
-    private System.Collections.IEnumerator ScaleButtonEffect(Transform buttonTransform)
+    public void OnPointerDown(PointerEventData eventData)
     {
-        Vector3 originalScale = buttonTransform.localScale;
-        Vector3 targetScale = originalScale * scaleMultiplier;
-        float timer = 0f;
+        transform.DOKill(true);
+        transform.DOScale(_originalScale * scaleMultiplier, animationDuration).SetEase(ease);
+    }
 
-        // Уменьшение
-        while (timer < animationDuration)
-        {
-            buttonTransform.localScale = Vector3.Lerp(originalScale, targetScale, timer / animationDuration);
-            timer += Time.deltaTime;
-            yield return null;
-        }
-        buttonTransform.localScale = targetScale;
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        ResetScale();
+    }
 
-        // Возврат
-        timer = 0f;
-        while (timer < animationDuration)
-        {
-            buttonTransform.localScale = Vector3.Lerp(targetScale, originalScale, timer / animationDuration);
-            timer += Time.deltaTime;
-            yield return null;
-        }
-        buttonTransform.localScale = originalScale;
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        ResetScale();
+    }
+
+    private void ResetScale()
+    {
+        transform.DOKill(true);
+        transform.DOScale(_originalScale, animationDuration).SetEase(ease);
     }
 }

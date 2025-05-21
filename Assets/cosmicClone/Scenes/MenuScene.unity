@@ -808,6 +808,7 @@ GameObject:
   - component: {fileID: 254148433}
   - component: {fileID: 254148432}
   - component: {fileID: 254148431}
+  - component: {fileID: 254148434}
   m_Layer: 5
   m_Name: close
   m_TagString: Untagged
@@ -902,18 +903,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &254148432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,6 +941,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254148429}
   m_CullTransparentMesh: 1
+--- !u!114 &254148434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254148429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &281545519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1273,7 @@ GameObject:
   - component: {fileID: 344235336}
   - component: {fileID: 344235335}
   - component: {fileID: 344235334}
+  - component: {fileID: 344235337}
   m_Layer: 5
   m_Name: Skins
   m_TagString: Untagged
@@ -1363,18 +1368,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &344235335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1413,6 +1406,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344235332}
   m_CullTransparentMesh: 1
+--- !u!114 &344235337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344235332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &364732776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +1524,7 @@ GameObject:
   - component: {fileID: 383303801}
   - component: {fileID: 383303800}
   - component: {fileID: 383303799}
+  - component: {fileID: 383303802}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1610,18 +1619,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &383303800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1660,6 +1657,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383303797}
   m_CullTransparentMesh: 1
+--- !u!114 &383303802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383303797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &391945785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,7 +1974,6 @@ RectTransform:
   - {fileID: 642563477}
   - {fileID: 641016292}
   - {fileID: 1925935334}
-  - {fileID: 864564936}
   m_Father: {fileID: 436755003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1990,7 +2001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ed3d41e9cbdfc46fbb0fc68ec393063b, type: 3}
+  m_Sprite: {fileID: 2802429161895650232, guid: 9697a003d25194a788bdac7ef36df390, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3098,162 +3109,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863091947}
   m_CullTransparentMesh: 1
---- !u!1 &864564935
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 864564936}
-  - component: {fileID: 864564938}
-  - component: {fileID: 864564937}
-  - component: {fileID: 864564939}
-  m_Layer: 5
-  m_Name: Backs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &864564936
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864564935}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 619944704}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &864564937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864564935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: abb37dc2b251447fe997d48a57df124b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &864564938
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864564935}
-  m_CullTransparentMesh: 1
---- !u!114 &864564939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 864564935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 864564937}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2020887065}
-        m_TargetAssemblyTypeName: MenuAudioManager, Assembly-CSharp
-        m_MethodName: PlayClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2020887062}
-        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
-        m_MethodName: OpenBacks
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &887984909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,6 +3271,7 @@ GameObject:
   - component: {fileID: 913372634}
   - component: {fileID: 913372633}
   - component: {fileID: 913372632}
+  - component: {fileID: 913372635}
   m_Layer: 5
   m_Name: close
   m_TagString: Untagged
@@ -3510,18 +3366,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &913372633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3560,6 +3404,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913372630}
   m_CullTransparentMesh: 1
+--- !u!114 &913372635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913372630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &933208920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,6 +3601,7 @@ GameObject:
   - component: {fileID: 939011196}
   - component: {fileID: 939011195}
   - component: {fileID: 939011194}
+  - component: {fileID: 939011197}
   m_Layer: 5
   m_Name: YesButton
   m_TagString: Untagged
@@ -3836,18 +3696,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &939011195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3886,6 +3734,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939011191}
   m_CullTransparentMesh: 1
+--- !u!114 &939011197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939011191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &942960516
 GameObject:
   m_ObjectHideFlags: 0
@@ -4095,7 +3958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ed3d41e9cbdfc46fbb0fc68ec393063b, type: 3}
+  m_Sprite: {fileID: 2802429161895650232, guid: 9697a003d25194a788bdac7ef36df390, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4295,7 +4158,7 @@ GameObject:
   - component: {fileID: 1099721721}
   - component: {fileID: 1099721720}
   - component: {fileID: 1099721719}
-  - component: {fileID: 1099721722}
+  - component: {fileID: 1099721723}
   m_Layer: 5
   m_Name: NoButton
   m_TagString: Untagged
@@ -4390,18 +4253,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1099721720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4440,28 +4291,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099721717}
   m_CullTransparentMesh: 1
---- !u!95 &1099721722
-Animator:
-  serializedVersion: 7
+--- !u!114 &1099721723
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099721717}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 722483e3d5fd04da8a0310deb3f9f329, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &1101420320
 GameObject:
   m_ObjectHideFlags: 0
@@ -4894,6 +4738,7 @@ GameObject:
   - component: {fileID: 1297514165}
   - component: {fileID: 1297514164}
   - component: {fileID: 1297514163}
+  - component: {fileID: 1297514166}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -4988,18 +4833,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1297514164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5038,6 +4871,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297514161}
   m_CullTransparentMesh: 1
+--- !u!114 &1297514166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297514161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &1302317277
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,6 +5140,7 @@ GameObject:
   - component: {fileID: 1380142376}
   - component: {fileID: 1380142375}
   - component: {fileID: 1380142374}
+  - component: {fileID: 1380142377}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -5386,18 +5235,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2020887066}
-        m_TargetAssemblyTypeName: ButtonScaler, Assembly-CSharp
-        m_MethodName: ScaleCallingButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1380142375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5436,6 +5273,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380142372}
   m_CullTransparentMesh: 1
+--- !u!114 &1380142377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380142372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleMultiplier: 0.9
+  animationDuration: 0.1
+  ease: 6
 --- !u!1 &1406714881
 GameObject:
   m_ObjectHideFlags: 0
@@ -5966,7 +5818,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1242, y: 2688}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 0.75
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -7039,6 +6891,7 @@ GameObject:
   - component: {fileID: 2020887064}
   - component: {fileID: 2020887065}
   - component: {fileID: 2020887066}
+  - component: {fileID: 2020887067}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -7076,7 +6929,8 @@ MonoBehaviour:
   _menuWindow: {fileID: 304811323}
   _charactersWindow: {fileID: 436755002}
   _settingsWindow: {fileID: 190408827}
-  _ExitWindow: {fileID: 1637253435}
+  _exitWindow: {fileID: 1637253435}
+  popupEase: 27
 --- !u!114 &2020887063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7166,8 +7020,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a61828edaa0d941b6a4c899071bb5a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleMultiplier: 0.9
+  scaleMultiplier: 0.5
   animationDuration: 0.1
+  ease: 6
+--- !u!114 &2020887067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020887059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2023633555
 GameObject:
   m_ObjectHideFlags: 0
