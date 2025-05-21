@@ -38,16 +38,6 @@ public class UIButtonAnimator : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         transform.DOKill(true);
         transform.DOScale(_originalScale, animationDuration).SetEase(ease);
         AudioManager.Instance?.PlayUIClick();
-        Vibrate();
-    }
-
-    private void Vibrate()
-    {
-#if UNITY_ANDROID && !UNITY_EDITOR
-        if (vibrateOnAndroid)
-        {
-            Handheld.Vibrate();
-        }
-#endif
+        VibrationManager.Instance?.Vibrate();
     }
 }

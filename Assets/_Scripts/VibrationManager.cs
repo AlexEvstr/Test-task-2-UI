@@ -15,22 +15,23 @@ public class VibrationManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+
+        Vibration.Init();
     }
 
     public void Vibrate()
     {
         if (!vibrationEnabled) return;
 
-#if UNITY_ANDROID || UNITY_IOS
-        Vibration.Vibrate(50); // лёгкая вибрация, 50ms
+#if UNITY_ANDROID
+        Vibration.VibratePop();
 #endif
     }
 
     public void VibrateHeavy()
     {
-#if UNITY_ANDROID || UNITY_IOS
-        Vibration.Vibrate(100);
+#if UNITY_ANDROID
+        Vibration.VibratePeek();
 #endif
     }
 
